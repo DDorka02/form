@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stilus.css">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#" method="get">
+       <fieldset>
+        <legend>Mosómacik</legend>
+            <label for="nev"> Név: </label>
+            <input type="text" id="nev" name="macinev" placeholder="Bearkenye"><br>
+            <label for="szin"> Szín: </label>
+            <input type="color" id="szin" name="maciszin"><br>
+            <label for="tomeg"> Tömeg(kg): </label>
+            <input type="range" id="tomeg" name="tomeg" min="6" max="10" oninput="this.from.tomeg_szam=this.value"><br>
+            <input type="number" name="tomeg_szam" size="3" oninput="this.from.tomeg=this.value">
+            <input type="submit" value="Küldés">
+       </fieldset>
+    </form>
+</body>
+</html>
